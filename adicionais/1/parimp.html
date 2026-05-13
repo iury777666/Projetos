@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ParImp</title>
+  <style type="text/css" media="all">
+    body {
+      font: normal 15pt Arial;
+      background: #A1D63DCC;
+    }
+    header {
+      color: white;
+      text-align: center;
+      box-shadow: 5px 5px 10px black;
+    }
+    section {
+      width: 80%;
+      padding: 16px;
+      border-radius: 10px;
+      margin: auto;
+      background: white;
+      box-shadow: 5px 5px 10px black;
+    }
+    #checar {
+      background: #3DD6D4;
+      border-radius: 10px;
+    }
+    #res {
+      box-shadow: 1px 1px 1px black;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Par / Impar</h1>
+  </header>
+  <section>
+    <div>
+      Numero:<input type="number" name="num" id="num" placeholder="123456789...">
+      <input type="button" name="checar" id="checar" value="checar" onclick="checar()"/>
+    </div>
+    <div id="res">
+      Digite um numero no input acima
+    </div>
+  </section>
+  <script>
+    function checar() {
+      let num = document.getElementById('num')
+      let res = document.getElementById('res')
+      if (num.value) {
+        if (Number(num.value)%2==0) {
+        return res.innerHTML = `O número ${num.value} e par`
+      } else {
+        return res.innerHTML = `O número ${num.value} e impar`
+      }
+      } else {
+        alert('[ERRO] Digite um número!')
+      }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(#BBDA94, #89EACA);
+  font: normal 15pt Arial;
+}
+
+header {
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+
+section {
+  background: white;
+  margin: auto;
+  text-align: center;
+  width: 90%;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 11px black;
+}
