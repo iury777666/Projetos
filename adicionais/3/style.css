@@ -1,0 +1,22 @@
+body, html {
+  height: 99.9%;
+}
+
+body {
+  font: normal 15pt Arial;
+  background: linear-gradient(#6382E6, #1745D9);
+}
+
+section {
+  background: white;
+  border-radius: 15px;
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+  box-shadow: 5px 5px 10px black;
+}
+
+input {
+  padding: 16px;
+  border-radius: 10px;
+}
