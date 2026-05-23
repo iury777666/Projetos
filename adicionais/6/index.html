@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teste</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <h1>Testes</h1>
+  <p id="escolhid"></p>
+
+  <div id="real">
+    <h3>Real Madrid - Elenco</h3>
+    <hr />
+    <p>Goleiro: Cortoa</p>
+    <p>Zagueiros: Arnold & Valverde</p>
+    <p>Meia: Carvahal</p>
+    <p>Atacante: Mbappe</p>
+    <button id="btnr" onclick="escolherr()">Escolher</button>
+  </div>
+
+  <div id="barc">
+    <h3>Barcelona - Elenco</h3>
+    <hr />
+    <p>Goleiro: Lamine Yamal</p>
+    <p>Zagueiros: Griezman & Ronald</p>
+    <p>Meia: Fernebache</p>
+    <p>Atacante: Levandosky</p>
+    <button id="btnb" onclick="escolherb()">Escolher</button>
+  </div>
+
+  <script>
+    // Objetos com os dados dos times (caso queira usá-los dinamicamente no futuro)
+    const barc = {
+      'goleiro': 'Lamine Yamal',
+      'zag': 'Griezman',
+      'zag-2': 'Ronald',
+      'atacante': 'Levandowski',
+      'mc': 'fernebache'
+    }
+
+    const real = {
+      'goleiro': 'Cortoa',
+      'zag': 'Arnold',
+      'zag-2': 'Valverde',
+      'atacante': 'Mbappe',
+      'mc': 'Carvahal'
+    }
+
+    let escolhido = '';
+    
+    // CORREÇÃO: Usando getElementById para selecionar o parágrafo corretamente
+    let campoTexto = document.getElementById('escolhid');
+
+    function escolherr() {
+      escolhido = 'real';
+      campoTexto.innerHTML = `Você escolheu o <strong>Real Madrid</strong>`;
+    }
+
+    function escolherb() {
+      escolhido = 'barc';
+      // CORREÇÃO: Adicionado o feedback visual para o Barcelona também
+      campoTexto.innerHTML = `Você escolheu o <strong>Barcelona</strong>`;
+    }
+  </script>
+</body>
+
+</html>

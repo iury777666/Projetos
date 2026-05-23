@@ -1,0 +1,25 @@
+div {
+  background: rgba(91, 91, 96, 0.84);
+  color: #ffffff; /* Adiciona contraste para o texto */
+  width: 90%; /* Mais responsivo em telas de celular */
+  max-width: 350px; /* Evita que fique gigante em telas maiores */
+  
+  /* Mudança crucial: deixa a altura automática baseada no conteúdo */
+  height: auto; 
+  padding: 15px; /* Cria um espaço interno confortável para o texto */
+  
+  border-radius: 12px; /* Cantos arredondados mais sutis e modernos */
+  text-align: center;
+  
+  /* Centraliza na tela e cria um espaçamento de 20px entre os blocos */
+  margin: 20px auto; 
+  
+  box-sizing: border-box; /* Garante que o padding não quebre a largura total */
+}
+
+button {
+  border-radius: 10px;
+  padding: 10px;
+  background: rgba(60, 59, 59, 0.67);
+  color: white;
+}
